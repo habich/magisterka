@@ -86,10 +86,6 @@
 
 \chapter{Wprowadzenie}
 
-Znaczenie drozdzy \cite{100years}
-Tolerancja na stres kluczowa dla produkcji drozdzy \cite{Stresstolerance}
-
-
 \section{Temperatura jako czynnik stresowy}
 
 Temperatura stanowi uniwersalny czynnik stresowy w świecie komórkowym. Pomijając nieliczne organizmy należące do grupy hipertermofili, wzrost temperatury stawnowi poważne zagrożenie
@@ -105,7 +101,7 @@ wyjątkowo czułe) oraz przeżycie podczas warunków stresowych (najcześciej bi
 
 Rozrywanie się wiązań wodorowych niesie ze sobą również inne konsekwencje. Wiązania wodorowe podtrzymują strukturę RNA i DNA. Poprzez działanie temperatury może dochodzić do superskręcania się DNA co uniemożliwia 
 eksperesję genów oraz rozklejania się specyficznych struktur RNA. Podobnie jak w przypadku białek część organizmów umie to obrócić na swoją korzyść. W przypadku E.coli system wyczuwania zmian temperatury opiera się
-w dużej mierze na różnicach w topnieniu RNA i DNA\cite{TsInEubact} \cite{Digel08}.
+w dużej mierze na różnicach w topnieniu RNA i DNA\cite{TsInEubact, Digel08}.
 
 Innym problemem związanym z rozluźnianiem się wiązań jest zwiększona płynność błony komórkowej. Niestety nie jest to zbyt dobrze zbadany problem\cite{Membranefluidity}, ale obecne wyniki pozwalają zaobserwować zwiększoną
 płynność błony komórkowej, rozluźnienie jej struktury, a tym samym większą przepuszczalność. Z uwagi na bardzo groźne konsekwencje dla komórki reakcja systemu jest bardzo szybka i prowadzi do zagęszczenia błony.
@@ -137,7 +133,7 @@ na uniknięcie śmierci w ekstremalnych warunkach 50 \textcelsius \cite{Mcaliste
 Reakcję drożdży na temperaturę można rozpatrywać na kilku poziomach złożności. Patrząc z punktu widzenia makro na komórkę
 można zaobserwować zmiany w cyklu życiowym. Organizm poddany szoku termicznemu zatrzymuje się w fazie G$_1$. Dzieje się tak 
 z uwagi na redukcję tranksryptów, oraz postraslacyjne modyfikacje cyklin fazy G$_1$/S CLN1 oraz CLN2\cite{CyclinArrest}. Jest to prawdopodobnie
-wywołane nagromadzeniem się zdenaturowanych białek, co pośrednio aktywuje czynnik transkrypcyjny HSF1\cite{MisfoldedProteins}. Można się domyślać, że 
+wywołane nagromadzeniem się zdenaturowanych białek, co pośrednio aktywuje czynnik transkrypcyjny Hsf1\cite{MisfoldedProteins}. Można się domyślać, że 
 podział komórki w niesprzyjających okolicznościach mógłby mieć dla niej katastrofalne skutki.	
 
 Komórki drożdży są ograniczone od świata zewnętrznego poprzez błonę komórkową i ścianę złożoną z glukozo- i maltozo- polisacharydów
@@ -158,36 +154,39 @@ Komórki drożdży są ograniczone od świata zewnętrznego poprzez błonę kom�
  reguluje działanie czynnika transkrypcyjnego Msn2/4 odpowiedzialnego za większość reakcji temperaturowych. Prawdopodobnie 
  jest to wewnętrzny hamulec systemu nie pozwalajacy na przesadzoną reakcję na stres\cite{Blomberg00,StressResponse99}.
 
- Typową obserwacją w komórkach wystawionych na stres cieplny jest nagromadzenie się źle sfałdowanych białek. 
+  Największą przemianą jaka następuje w komórce podczas reakcji na temperaturę jest zmiana profilu białkowego. Za większość tej 
+ reakcji odpowiadają czynnki transkrypcyjne Hsf1 i Msn2/4. Przyłączają się one odpowiednio do sekwencji oznaczonych jako 
+ HSE (\textbf{H}eat \textbf{s}hock \textbf{e}lements) i oraz STRE (\textbf{st}ress \textbf{r}esponse \textbf{e}lements).
+ Wiele białek, które powstają poprzez przyłączenie się do sekwencji HSE
+ jest chaperonami odpowiedzialnymi za fałdowanie się białek, transport, dojrzewanie i degadację enzymów. Ponad to, do tej grupy
+ należą enzymy ubikwitynujące (np. Ubc4) , chaperoniny (Hsp60), białka towarzyszące i wiele innych. Odpowiedź wynikająca z 
+ przyłączenia się Msn2/4 do STRE ma bardziej charakter metaboliczny np. odpowiedzialne za produkcję i degradację trehalozy, 
+ alternatywne izoformy białek glikolizy itd.\cite{MsnContraHsf1}. Badania wskazują, że podczas szoku cieplnego może zmieniać się
+ ekspresja nawet do 12\% białek \cite{TransciptomeUponHeatShock}.
+
+ 
+ W każdym  momencie życia komórki setki białek biorą udział w niezliczonych reakcjach w cytozolu. Biorąc pod uwagę ich ekstremalnie
+ duże stężenie (ponad 300 mg/ml) oraz ciągły dopływ wynikający z syntezy nowych makromolekuł staje się oczywiste, że 
+ kontrola jakości białek jest kluczowym problemem z jakim boryka się komórka podczas szoku cieplnego.
+ Typową obserwacją w komórkach wystawionych na wzrost temperatury jest nagromadzenie się źle sfałdowanych białek. 
  W przypadku drożdży taka reakcja pojawia się dopiero przy temperaturach ekstremalnych, powyżej 50 \textcelsius. Można
  wtedy obserwować zarówno toksyczną agregację zdenaturowanych białek jak i groźne dla funkcjonowania komórki ubytki w 
  ilości białek niezbędnych do życia. Podczas umiarkowanego szoku termicznego (ok. 36-37 \textcelsius) nie obserwuje się
  agregatów. Prawdopodobnie wynika to z bardzo sprawnej maszynerii odpowiedzi na stres cieplny, ubikwitynacji zdenaturowanych
- białek i ich degradacji\cite{Bible}.
- 
+ białek i ich degradacji. Największą rolę pełnią w niej chaperony. Chaperony dzielą się na klika 
+ rodzin z których każda pełni trochę inną funkcję. Hsp70 odpowiadają za prawidłowe sfałdowanie się dopiero co powstających białek oraz
+ refałdowanie zdenaturowanych. Ich rola polega na poprawianiu struktury czwartorzędowej poprzez przykrywanie nieprawidłowo wystawionych fragmentów 
+ hydrofobowych pozwalając im schować się do wnętrza białka. Do klasy Hsp70 należą między innymi białka Ssa, Ssb i Sse. W przeciwieństwie do
+ Hsp70 chaperony Hsp90 są dużo bardziej wybredne w doborze substratów. Ich funkcja polega na wspomaganiu końcowego składania się kinaz i wielu czynników transkrypcyjnych. 
+ Dokładny mechanizm działania i doboru Hsp90 nie jest znany, lecz wiadomo, że polega na swoistym tańcu chaperonu i pomocniczych białek opiekuńczych 
+ wymuszających prawidłowe sfałdowanie się substratu. Przykładem takiego substratu jest wcześniej wspominany Hsf1. Kolejną rodziną 
+ chaperonów pojawiających się w trakcie szoku cieplnego są Hsp104. Białka te posiadają unikatową wśród eukariotów umiejętność znajdowania
+ agregatów białkowych i rozpuszczania ich, kierując zdenaturowane białka na drogę refałdowania. Ostatnią grupą o której warto wspomnieć
+ są małe chaperony tzw. sHsp do których należą między innymi Hsp26, Hsp42 oraz Hsp12. Ich rolą jest wspieranie rozpuszczalności i stabilności białek
+ podczas szoku cieplnego. Podobną funkcję do chaperonów pełnią chaperoniny, których stężenie również wzrasta podczas niesprzyjających warunków.
+ Chaperoniny tworzą podwójnie-pierścieniowe struktury wewnątrz których zwijane są białka z udziałem ATP. Ograniczenie przestrzeni i aktywny udział chaperoninów
+ pozwala na sprawne składanie białek niezależnie od warunków środowiska \cite{Bible}.
 
- Największą przemianą jaka następuje w komórce podczas reakcji na temperaturę jest zmiana profilu białkowego. Za większość tej 
- reakcji odpowiadają czynnki transkrypcyjne Hsf1 i Msn2/4. 
-%TODO
- 
- 7.pdf
- trehaloza YingYangTrehalose
- 
- Glikoliza Control of Glycolytic Oscillations by Temperautr Mair et all
- 
-Problemy z DNA i reakcja na temperaturę są oddzielnie kontrolowane \cite{Duallyregulated85}
-
-Regulacja transkrypcji \cite{Yamamoto08}
-
-The Response to Heat Shock and Oxidative Stress
-in Saccharomyces cerevisiae \cite{Morano12}
-
-Reakcja cala \cite{Bible}
- 
-
-Zmiany profilu ekspresji \cite{Gash00}
-
-1. Problemy z RNA/DNA
 
 % do poziomu komorkowego ok 2 strony
 
@@ -204,7 +203,7 @@ za reakcję na temperaturę jest szlak CWI (cell wall integrity) który odpowiad
 naprawę ściany komórkowej. \cite{CWI} %TODO 5 wpisac
  Co ciekawe błona komórkowa nie jest jedynie biernym organellum które chroni
  komórkę i służy jako rusztowanie dla sensorów, ale również sama jej płynność stanowi informację dla komórki o szoku cieplnym.
- Dynamika błony komórkowej ma wpływ na reakcję HSR\cite{Carratu96}
+ Dynamika błony komórkowej ma wpływ na reakcję HSR\cite{Carratu96}.
 
 Stosunkowo szybką reakcją jest sposób sygnalizacji wynikający z nagromadzenia się zdenaturowanych białek. Dzięki tej ścieżce
 sygnałowej aktywowany jest czynnik transkrypcyjny Hsf1 - najbardziej charakterystyczny wyznacznik szoku cieplnego. Dokładny mechanizm
@@ -216,9 +215,33 @@ Jak wynika z badań białka o kluczowej roli dla reakcji na szok temperaturowy m
 Termometry RNA \cite{RNAterm}
 Stabilność RNA \cite{Roca11}
 
-Niezbyt dokladnie
 
- 
+Hsp70 jako termometr lecz brak innych danych
+
+Układ w glikolizie jako przyklad sensoru stresu 
+% Niezbyt dokladnie
+% 
+% 
+%  
+%  7.pdf
+% 
+%  
+%  
+% Problemy z DNA i reakcja na temperaturę są oddzielnie kontrolowane \cite{Duallyregulated85}
+% 
+% Regulacja transkrypcji \cite{Yamamoto08}
+% 
+% The Response to Heat Shock and Oxidative Stress
+% in Saccharomyces cerevisiae \cite{Morano12}
+% 
+% Reakcja cala \cite{Bible}
+%  
+% 
+% 1. Problemy z RNA/DNA
+% 
+% 
+%   Glikoliza Control of Glycolytic Oscillations by Temperautr Mair et all
+
 %chaperony (?)
 %sensory powierzchniowe
 % termometry RNA
@@ -229,26 +252,59 @@ Niezbyt dokladnie
 
 \chapter{Cel pracy}
 
-Probuje zobaczyc jaka jest dokladna droga sygnalizacji temperatury. po pierwsze sa bialka blonowe ktore sa dobrze opisane ale ja to zrobilam lepiej
-po drugie sa reakcje bialek po trzecie jest rna po czwarte jest odpowiedz z metabolizmu. generalnie odpowiedz metaboolizmu jest kompenosowana ale pytanie w jaki sposob.
-sa uklady autokatalityczne ktore sa wrazliwe na wahania temperatury. a co ze statystyczna zmiana szybkosci reakcji wynikajacych ze zmiany km od temperatury?
-nikt tego wczesniej nie ruszal wiec aby opracowac pelny model sygnalizacji (bo z pewnoscia metabolizm od razu reaguje) trzeba zajac sie tym.
+Drożdże są bardzo ważnymi organizmami z uwagi na trzy podstawowe aspekty. Po pierwsze 
+mają one znaczenie przemysłowe - od tysięcy lat towarzyszą ludzkości jako organizmy 
+produkujące alkohol oraz wykorzystywane do celów piekarskich. Gdy w 1857 roku Pasteur 
+zaprezentował dowód, że to właśnie one odpowiadają za proces fermentacji, ich wykorzystanie 
+stało się bardziej świadome, a produkcja alkoholu zaczęła być optymalizowana 
+pod względem wydajnościowym drożdży \cite{100years}. Jak wskazują badania najlepsze rezultaty 
+uzyskuje się balansując na wąskiej granicy szoku środowiskowego \cite{Stresstolerance}. Odkrycie i usystematyzowanie wiedzy 
+jak drożdże wykrywają wzrost temperatury może mieć znaczące dla rozwoju przemysłu alkoholowego. 
+Drugim równie ważnym powodem, jest wykorzystanie drożdża jako organizmu modelowego. Poznanie dokładnych mechanizmów
+jakie zachodzą podczas szoku cieplnego może pomóc nam zrozumieć jak to przebiega u innych organizmów. 
+
+
+
+% Znaczenie drozdzy \cite{100years}
+% Tolerancja na stres kluczowa dla produkcji drozdzy \cite{Stresstolerance}
+
+
+% Inny model \cite{OtherModel}
+% 
+% Probuje zobaczyc jaka jest dokladna droga sygnalizacji temperatury. po pierwsze sa bialka blonowe ktore sa dobrze opisane ale ja to zrobilam lepiej
+% po drugie sa reakcje bialek po trzecie jest rna po czwarte jest odpowiedz z metabolizmu. generalnie odpowiedz metaboolizmu jest kompenosowana ale pytanie w jaki sposob.
+% sa uklady autokatalityczne ktore sa wrazliwe na wahania temperatury. a co ze statystyczna zmiana szybkosci reakcji wynikajacych ze zmiany km od temperatury?
+% nikt tego wczesniej nie ruszal wiec aby opracowac pelny model sygnalizacji (bo z pewnoscia metabolizm od razu reaguje) trzeba zajac sie tym.
 % nie ma oczywistego sensora w ujeciu komorkowym przesuniec metabolicznych wywolywanych zmianami km/T
 % integrancja sensora z reszta systemu
 
 \chapter{Materiały i Metody}
-
-1. budowa modelu
--> program X 
-2. Badanie odpowiedzi glikolizy
--> program Y
-3. Dane na temat 
+\section{Budowa modelu}
+\section{Badanie właściwości glikolizy}
+% 1. budowa modelu
+% -> program X 
+% 2. Badanie odpowiedzi glikolizy
+% -> program Y
+% 3. Dane na temat 
 
 \chapter{Wyniki i dyskusja}
+\section{Budowa modelu}
+\subsection{Szlak HOG}
+\subsection{Szalak CWI}
+\subsection{Szlak Ca$^{2+}$}
+\subsection{Szlak aktywacji Hsf1 i regulacja odpowiedzi za pomocą PKA}
+\subsection{Trehaloza i glikoliza}
+
+\section{Badanie odpowiedzi glikolizy na zmiany km}
+%\section{Bialka o niskiej temperaturze denaturacji}
+
+% Trehaloza \cite{TrehaloseRegulatorHsf}
+%  trehaloza YingYangTrehalose
+
 
 \chapter{Podsumowanie}
 
-Kompensacja odpowiedzi metabolizmu nie tylko jako zlozenie wyhylen autokatalitycznych ale takze zwyklych wychylen glikolizy wynikajacych ze zmian km
+% Kompensacja odpowiedzi metabolizmu nie tylko jako zlozenie wyhylen autokatalitycznych ale takze zwyklych wychylen glikolizy wynikajacych ze zmian km
 
 
 \bibliographystyle{amsplain}
