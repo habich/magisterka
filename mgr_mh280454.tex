@@ -154,7 +154,7 @@ Komórki drożdży są ograniczone od świata zewnętrznego poprzez błonę kom�
  reguluje działanie czynnika transkrypcyjnego Msn2/4 odpowiedzialnego za większość reakcji temperaturowych. Prawdopodobnie 
  jest to wewnętrzny hamulec systemu nie pozwalajacy na przesadzoną reakcję na stres\cite{Blomberg00,StressResponse99}.
 
-  Największą przemianą jaka następuje w komórce podczas reakcji na temperaturę jest zmiana profilu białkowego. Za większość tej 
+ Największą przemianą jaka następuje w komórce podczas reakcji na temperaturę jest zmiana profilu białkowego. Za większość tej 
  reakcji odpowiadają czynnki transkrypcyjne Hsf1 i Msn2/4. Przyłączają się one odpowiednio do sekwencji oznaczonych jako 
  HSE (\textbf{H}eat \textbf{s}hock \textbf{e}lements) i oraz STRE (\textbf{st}ress \textbf{r}esponse \textbf{e}lements).
  Wiele białek, które powstają poprzez przyłączenie się do sekwencji HSE
@@ -163,7 +163,6 @@ Komórki drożdży są ograniczone od świata zewnętrznego poprzez błonę kom�
  przyłączenia się Msn2/4 do STRE ma bardziej charakter metaboliczny np. odpowiedzialne za produkcję i degradację trehalozy, 
  alternatywne izoformy białek glikolizy itd.\cite{MsnContraHsf1}. Badania wskazują, że podczas szoku cieplnego może zmieniać się
  ekspresja nawet do 12\% białek \cite{TransciptomeUponHeatShock}.
-
  
  W każdym  momencie życia komórki setki białek biorą udział w niezliczonych reakcjach w cytozolu. Biorąc pod uwagę ich ekstremalnie
  duże stężenie (ponad 300 mg/ml) oraz ciągły dopływ wynikający z syntezy nowych makromolekuł staje się oczywiste, że 
@@ -200,10 +199,10 @@ Wydaje się, że pierwszymi sensorami temperatury są białka błonowe które ur
 najlepiej poznanych należy ścieżka aktywacji HOG której receptorem jest białko błonowe Sho1, a końcowym wynikiem 
 aktywacja czynników transkrypcyjnych z rodziny Msn\cite{SensingLesson}. Innym często wymienianym w literaturze szlakiem sygnałowym odpowiedzialnym 
 za reakcję na temperaturę jest szlak CWI (cell wall integrity) który odpowiada za czynniki traskrypcyjne wspierające 
-naprawę ściany komórkowej. \cite{CWI} %TODO 5 wpisac
- Co ciekawe błona komórkowa nie jest jedynie biernym organellum które chroni
- komórkę i służy jako rusztowanie dla sensorów, ale również sama jej płynność stanowi informację dla komórki o szoku cieplnym.
- Dynamika błony komórkowej ma wpływ na reakcję HSR\cite{Carratu96}.
+naprawę ściany komórkowej. \cite{CWI} 
+Co ciekawe błona komórkowa nie jest jedynie biernym organellum które chroni
+komórkę i służy jako rusztowanie dla sensorów, ale również sama jej płynność stanowi informację dla komórki o szoku cieplnym.
+Dynamika błony komórkowej ma wpływ na reakcję HSR\cite{Carratu96}.
 
 Stosunkowo szybką reakcją jest sposób sygnalizacji wynikający z nagromadzenia się zdenaturowanych białek. Dzięki tej ścieżce
 sygnałowej aktywowany jest czynnik transkrypcyjny Hsf1 - najbardziej charakterystyczny wyznacznik szoku cieplnego. Dokładny mechanizm
@@ -215,8 +214,9 @@ Jak wynika z badań białka o kluczowej roli dla reakcji na szok temperaturowy m
 Termometry RNA \cite{RNAterm}
 Stabilność RNA \cite{Roca11}
 
-
-Hsp70 jako termometr lecz brak innych danych
+W literaturze nie ma danych na temat białek w Saccharomyces cerevisiae działających jak tradycyjne termometry proteinowe. Czasami
+wspomina się o Hsp70 jako białku który pełni taką funkcję. Rzeczywiście, z uwagi na jego wiązanie się z czynnikiem transkrypcyjnym Hsf1
+wpływa na transkrypcje białek odpowiedzi na szok cieplny, ale nie jest to oparte na własnej denaturacji i 
 
 Układ w glikolizie jako przyklad sensoru stresu 
 % Niezbyt dokladnie
@@ -252,8 +252,20 @@ Układ w glikolizie jako przyklad sensoru stresu
 
 \chapter{Cel pracy}
 
-Drożdże są bardzo ważnymi organizmami z uwagi na trzy podstawowe aspekty. Po pierwsze 
-mają one znaczenie przemysłowe - od tysięcy lat towarzyszą ludzkości jako organizmy 
+Celem pracy jest stworzenie możliwie pełnego systemu wykrywania wzrostu temperatury przez drożdże. 
+Jak dotąd pojawiło się wiele prac które w oderwaniu od siebie wskazywały na możliwość pobudzenia
+temperaturowego danego szlaku sygnalizacyjnego, lecz nie udało mi się znaleźć takiej która by 
+zbierała obecnie dostępną wiedzę na ten temat. Z uwagi na to, że obecne prace skupiają się
+przede wszystkim na pojedynczych szlakach sygnalizacyjnych, to brakuje badań na temat 
+interakcji szlaków ze sobą i połączeń między nimi które próbowałam znaleźć. Ponad to warto zwrócić uwagę, że
+nie istnieją obecnie wyniki które by wskazywały na to jaki jest wkład zmiany prędkości metabolizmu
+komórki w systemy sygnalizacji szoku cieplnego. Na podstawie glikolizy zbadałam reakcje ciągu 
+enzymatycznego na wzrost wartości km białek. Cała moja praca może służyć jako wstęp do dalszych badań
+nad reakcją drożdży na szok cieplny, a szczególnie nad próbą oszacowania ilościowego wkładu 
+wzrostu szybkości reakcji enzymatycznych na całość procesów zachodzących w komórce podczas szoku terminczego.
+
+Badania nad reakcją drożdży na temperaturę są istotne z uwagi na trzy podstawowe aspekty. Po pierwsze 
+mają one znaczenie przemysłowe - od tysięcy lat drożdże towarzyszą ludzkości jako organizmy 
 produkujące alkohol oraz wykorzystywane do celów piekarskich. Gdy w 1857 roku Pasteur 
 zaprezentował dowód, że to właśnie one odpowiadają za proces fermentacji, ich wykorzystanie 
 stało się bardziej świadome, a produkcja alkoholu zaczęła być optymalizowana 
@@ -261,7 +273,11 @@ pod względem wydajnościowym drożdży \cite{100years}. Jak wskazują badania n
 uzyskuje się balansując na wąskiej granicy szoku środowiskowego \cite{Stresstolerance}. Odkrycie i usystematyzowanie wiedzy 
 jak drożdże wykrywają wzrost temperatury może mieć znaczące dla rozwoju przemysłu alkoholowego. 
 Drugim równie ważnym powodem, jest wykorzystanie drożdża jako organizmu modelowego. Poznanie dokładnych mechanizmów
-jakie zachodzą podczas szoku cieplnego może pomóc nam zrozumieć jak to przebiega u innych organizmów. 
+jakie zachodzą podczas szoku cieplnego może pomóc nam zrozumieć jak to przebiega u innych organizmów. Ostatnim, lecz 
+nie najmniej ważnym argumentem za takimi badaniami jest patogeniczność niektórych szczepów drożdży. 
+Podwyższenie temperatury jest typą reakcją organizmu na zapalenie. Poznając mechanizmy w jaki sposób 
+drożdże wykrywają podwyższenie się temperatury możemy projektować leki uderzające w ten system, a tym samym
+uniemożliwiające im dostosowanie się do nowych warunków i w rezultacie powodujące ich śmierć. Już teraz
 
 
 
@@ -280,12 +296,25 @@ jakie zachodzą podczas szoku cieplnego może pomóc nam zrozumieć jak to przeb
 
 \chapter{Materiały i Metody}
 \section{Budowa modelu}
+
+Do budowy modelu korzystałam z progamu Cell Designer dostępnego na stronie www.celldesigner.org w wersji 4.3 . Dane do
+modelu czerpałam z dostępnej literatury.
+
 \section{Badanie właściwości glikolizy}
+
+Do badania właściwości glikolizy korzystałam z programu Copasi dostępnego na stronie  http://www.copasi.org/ w wersji 4.8 .
+Jako przykładowy model glikolizy wybrałam model z 2001 roku opublikowany na stronie http://www.ebi.ac.uk/biomodels-main/BIOMD0000000061
+oraz opisany w publikacji `Full-scale model of glycolysis in Saccharomyces cerevisiae.' przez Hynne F, Danø S, Sørensen PG. w Biophys. Chem. 2001 Dec; 94(1-2): 121-163.
+Zmiany wartości Km oparłam na %TODO 
 % 1. budowa modelu
 % -> program X 
 % 2. Badanie odpowiedzi glikolizy
 % -> program Y
 % 3. Dane na temat 
+\section{Poszukiwanie białkowych termometrów}
+
+Dane na temat zakresu odporności na temperaturę pobrałam z bazy danych BRENDA (http://www.brenda-enzymes.info/). 
+
 
 \chapter{Wyniki i dyskusja}
 \section{Budowa modelu}
