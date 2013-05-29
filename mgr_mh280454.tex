@@ -300,10 +300,415 @@ metaboliczne umożliwił mi serwis Kegg (http://www.genome.jp/kegg/).
 \chapter{Wyniki i dyskusja}
 \section{Budowa modelu}
 \subsection{Szlak HOG}
+\subsubsection{HOG}
+The yeast high-osmolarity glycerol (HOG) mitogen-activated protein kinase (MAPK) pathway has been
+characterized as being activated solely by osmotic stress. In this work, we show that the Hog1 MAPK is also
+activated by heat stress and that Sho1, previously identified as a membrane-bound osmosensor, is required for
+heat stress activation of Hog1. The two-component signaling protein, Sln1, the second osmosensor in the HOG
+pathway, was not involved in heat stress activation of Hog1, suggesting that the Sho1 and Sln1 sensors
+discriminate between stresses\cite{Winkler02}
+
+It was also found that protein tyrosine phosphatases (PTPs) Ptp2 and Ptp3, which inactivate Hog1, have two
+functions during heat stress. First, they are essential for survival at elevated temperatures, preventing lethality
+due to Hog1 hyperactivation. Second, they block inappropriate cross talk between the HOG and the cell wall
+integrity MAPK pathways, suggesting that PTPs are important for maintaining specificity in MAPK signaling
+pathways.\cite{Winkler02}
+
+\subsubsection{Msn2/4}
+Two nutrient-sensing pathways have
+been described to play important regulatory roles in controlling
+Msn2/4: the cAMP-protein kinase A (PKA) pathway and the TOR
+pathway\cite{Bible}
+
+As a result, we believe that such
+regulons, consisting of fluctuation-correlated genes, reflect biologically
+relevant modular structures that might exist to maintain
+useful but controlled diversity across a population. Such a bethedging
+strategy might be instrumental in allowing a population
+of cells to successfully navigate unanticipated changes in its
+environment (Thattai and van Oudenaarden, 2004). A scheme
+based on a coherently fluctuating program, rather than on a
+set of discordantly fluctuating individual genes, would constitute
+a robust implementation of a successful bet-hedging program.
+The noise regulons we have identified, which are coherently
+coordinated within one cell but variable across a population,
+might represent such a scenario. In particular, it is interesting
+to note the presence of the MSN2/4 pathway, which promotes
+survival in the face of acute stress as one such noise regulon.
+It is also interesting to note the absence of programs (e.g., an
+HSF1 regulon) that mediate long-term adaption and recovery
+from stress (Yamamoto et al., 2008). \cite{CellularNoice}
+
+Recent studies showed that Yak1 may contribute to the PKA-dependent inhibition of Msn2/4\cite{Bible}
+
 \subsection{Szalak CWI}
+The CWI pathway is activated by heat
+through an unknown mechanism that requires at least one member of the putative sensors Mid2 and Wsc1 to Wsc4. In the absence
+of these proteins, the HSR is activated normally, but cells are heat
+shock sensitive, are autolytic, and do not activate the CWI transcription factor Rlm1\cite{Bible}
+
+Signals are initiated at the plasma
+membrane (PM) through the cell surface sensors Wsc1, -2, and -3,
+Mid2, and Mtl1. The extracellular domains of these proteins are highly
+O-mannosylated. Together with PI4,5P2, which recruits the Rom1/2
+GEFs to the plasma membrane, the sensors stimulate nucleotide
+exchange on Rho1. Relative input of each sensor is indicated by the
+width of the arrows. Rho1 activates five effectors, including the 
+Pkc1-MAP kinase cascade, the 1,3-glucan synthase (GS), the Bni1 formin
+protein, the exocyst component Sec3, and the Skn7 transcription 
+factor. Additional regulatory inputs from the Tus1 GEF, the inhibitory
+Rho1 GAPs, and the Pkh1/2 protein kinases are indicated. Pkh1/2 are
+activated by phytosphingosine (PHS). The MAP kinase cascade, which
+is comprised of Bck1, Mkk1/2, and Mpk1, is activated by Pkc1. Several
+MAP kinase phosphatases downregulate Mpk1. Two transcription 
+factors, Rlm1 and the SBF complex (Swi4/Swi6), are targets of the MAP
+kinase.\cite{CWI}
+
+The Ptp2 and Ptp3 tyrosine phosphatases, which have been
+shown to dephosphorylate the Fus3 and Hog1 MAP kinases,
+also act on Mpk1 in vivo and in vitro. Both genetic and
+biochemical evidence suggests that Ptp2 is more effective than
+Ptp3 against activated Mpk1. Additionally, expression of PTP2
+but not PTP3 is induced in response to mild heat shock in an
+Mpk1-dependent manner, suggesting that activation of Mpk1
+establishes a negative feedback loop for its inactivation by
+Ptp2. Induction of PTP2 expression is partially under 
+the control of Rlm1. The positive regulation of PTP2 expression
+by Mpk1 is in contrast to its negative regulation of Msg5
+activity. Perhaps Ptp2 and Ptp3 function to reestablish the
+resting state of Mpk1 after stress-induced activation.\cite{CWI}
+
+Mpk1 is activated both by cell wall stress and periodically through the cell cycle.
+Swi6 is the regulatory subunit that complexes with Swi4 to form SBF,
+a cell cycle-specific transcription factor. During periods other than G1,
+Swi6 is phosphorylated on Ser160, which causes its exclusion from the
+nucleus. It is likely that this phosphorylation is catalyzed by Mpk1. Mpk1
+also phosphorylates Swi6 in response to cell wall stress. Swi4, the DNA-
+binding component of SBF, associates with Mpk1 in vitro and may
+form an alternative transcriptional complex for the regulation of some
+cell wall- and morphogenesis-related genes, notably FKS2 and PCL1.\cite{CWI}
+
+
 \subsection{Szlak Ca$^{2+}$}
+Saccharomyces cerevisiae possesses a
+high-affinity Ca$^{2+}$ influx system in its plasma membrane comprised of at least two subunits, Cch1 and Mid1. 
+Activation of the Cch1-Mid1 channel
+results in accumulation of intracellular Ca$^{2+}$ and activation of
+calcineurin, the Ca$^{2+}$ and calmodulin-dependent serine/threonine-specific
+protein phosphatase. Stimuli that cause activation of Cch1-Mid1
+and calcineurin include pheromone treatment, {\bf mild heat shock}, hypoosmotic shock,
+endoplasmic reticulum stress, and an increase in extracellular cations (i.e., Li$^+$ and Na$^+$).
+Calcineurin dephosphorylates several targets, including the
+Crz1/Tcn1 transcription factor, which allows entry of
+this factor into the nucleus. Calcineurin also inhibits the
+Cch1/Mid1 channel in what appears to be a negative feedback
+loop. Recent evidence indicates that a target of
+calcineurin action is the Cch1 subunit. Moreover, a screen
+of protein kinase knockout mutants revealed that Mpk1 is
+required for activation of the Cch1-Mid1 channel in response
+to endoplasmic reticulum stress (which may cause cell wall
+stress indirectly), suggesting that calcineurin antagonizes CWI
+signaling in this instance. It will be interesting to determine
+if agents that specifically induce cell wall stress result in
+phosphorylation and activation of the Cch1/Mid1 channel. If
+so, there exist at least three points of interaction between the
+CWI signaling pathway and Ca$^{2+}$ signaling: activation of the
+Cch1/Mid1 channel by Mpk1, activation of Crz1 by Rho1-Skn7,
+and collaboration between Mpk1 and Crz1 to activate
+FKS2 expression in response to cell wall stress.\cite{CWI}
+
+
+We propose that Crz1 destabilizes Msn2/Msn4 in the nuclei of cells in response to Ca2+ signalling.
+One possible physiological interpretation of the CDMD (Crz1-dependent Msn2/4 degradation) is that it minimizes unnecessary
+Hog1–Msn2/Msn4-dependent osmotic responses induced by Ca2+ by destabilizing Msn2/Msn4 through Crz1.\cite{Crz1DestabilizesMsn}
+
+Activation of Mpk1 results in
+stimulation of Rlm1 and Swi4 transcription factors to drive 
+transcription of FKS2 (and other cell wall-related genes) and the Mid1-Cch1
+Ca2+ channel. Channel activation leads to stimulation of the Ca2+-
+calmodulin-dependent protein phosphatase calcineurin. 
+Dephosphorylation of the Crz1 transcription factor by calcineurin allows its entry
+into the nucleus. Rho1 may activate the Skn7 transcription factor,
+which drives both expression of the OCH1 gene and
+stabilization of the Crz1 transcription factor for induction of FKS2.
+Thus, CWI signaling and Ca2+ signaling coordinately regulate
+expression of the GS-encoding FKS2 gene at several levels.\cite{CWI}
 \subsection{Szlak aktywacji Hsf1 i regulacja odpowiedzi za pomocą PKA}
+\subsubsection{Hsf1}
+Hsf1 is also thought to be negatively regulated
+through interactions with several heat shock proteins, including
+Hsp82 and members of the Hsp70 family, under both
+constitutive and heat shock conditions. To
+date, no specific signal that positively regulates Hsf1 activity
+during a heat shock has been identified.\cite{TrehaloseRegulatorHsf}
+
+These properties
+strongly suggest that the Hsf1 function is modulated largely post-translationally. 
+In addition, the loss of two potential control
+nodes—nuclear translocation and trimerization—suggests that
+the derepression/activation of the Hsf1 transactivation domains is
+a plausible regulatory mechanism.\cite{Bible}
+
+ Moreover, a detailed kinetic study 
+ demonstrated that Hsf1 is rapidly phosphorylated after heat shock,
+declining to a low degree of phosphorylation coincident with the
+transient induction of HSP genes. Interestingly, the 
+phosphorylation induced by menadione, a pro-oxidant that generates
+a superoxide anion in vivo, displays a different and sustained 
+kinetic pattern. The two-dimensional resolution of tryptic
+phosphopeptides also showed that Hsf1 is phosphorylated at different
+phosphor-acceptor sites in response to heat or menadione,
+suggesting that Hsf1 undergoes stress-specific phosphorylation.
+Although hyperphosphorylation generally correlates with the
+transactivation of Hsf1, many phosphorylation events have been
+established to repress its transcriptional activity. Sorger first
+reported that yeast Hsf1 remains hyperphosphorylated after
+the termination of the transient activation of the heat shock response\cite{Bible}
+
+
+The current model for how cells sense heat shock is as follows.
+Heat shock is proposed to cause
+the thermal misfolding of a fraction of cellular protein. Because
+activation of heat shock factor requires protein synthesis, it is
+thought that nascent proteins are the most susceptible to 
+thermal denaturation. Misfolded proteins then bind to cytoplasmic
+Hsp70 chaperones. Prior to heat shock, these chaperones are
+believed to equilibrate between being bound to heat shock
+factor (and inactivating it) and being free in the cytoplasm.
+Because misfolded proteins bind Hsp70 chaperones very
+tightly, their accumulation upon heat shock is proposed to
+titrate Hsp70 chaperones, resulting in liberated and active
+heat shock factor.\cite{MisfoldedProteins}
+
+\subsubsection{PKA}
+The Ras/cAMP/PKA signalling
+pathway cAMP had a negative effect on the induction
+of the Msn2p/Msn4p regulon, but did not affect the
+Hsf1p regulon.\cite{MsnContraHsf1}
+
+Rlm1p appears to be a downstream substrate of the cell integrity pathway MAPK Slt2p.
+Rlm1p is a substrate for the MAPK in vitro and shows heat stress-induced, SLT2-dependent phosphorylation
+in vivo . Rlm1p also interacts with Slt2p in the two-hybrid system\cite{MAPKinasePathways}
+
+Therefore, we conclude from these studies that PKA antagonizes calcineurin signaling by phosphorylating the Crz1p NLS and thus inhibiting Crz1p nuclear import.\cite{PKAandCalcineurin}
+
+We have found that the guanine nucleotide exchange factor for ras, Cdc25p, interacts with Ssa1p in Saccharomyces cerevisiae.
+This interaction was observed with GST-fused Cdc25p polypeptides and confirmed by coimmunoprecipitation with the endogenous Cdc25p.
+Hsp82 appeared also to be co-immunoprecipitated with Cdc25p, albeit to a lower level than Hsp70. In a strain deleted for SSA1 and SSA2,
+we observed a reduced cellular content of Cdc25p. Consistent with a reduced activity of the cAMP-dependent PKA pathway, the rate of accumulation
+of both trehalose and glycogen was stimulated in the ssa-deleted strain. Expression of SSA1 reversed these effects, whereas co-expression of SSA1
+and PDE2 restored high accumulation. The expression of genes repressed by cAMP, GAC1 and TPS1, fused to beta-galactosidase, was also stimulated by 
+deletion of SSA genes. The effect of ssa deletion on glycogen accumulation was lost in a strain deleted for CDC25 rescued by the RAS2ile152 allele.
+Altogether, these results lead to the conclusion that Ssa1p positively controls the cAMP pathway through Cdc25p. We propose that this connection plays
+a critical role in the adaptation of cells to stress conditions.\cite{Ssa1ControlscAmp}
 \subsection{Trehaloza i glikoliza}
+
+Extensive alteration of gene expression and metabolic remodeling enable the budding yeast Saccharomyces cerevisiae to
+ensure cellular homeostasis and adaptation to heat shock. The response logic of the cells to heat shock is still not entirely clear. 
+In this study, we combined the expression profiles with metabolic pathways to investigate the logical relations between heat shock response metabolic pathways. 
+The results showed that the heat-stressed S. cerevisiae cell accumulated trehalose and glycogen, which protect cellular proteins against denaturation, and modulate 
+its phospholipid structure to sustain stability of the cell wall. The TCA cycle was enhanced, and the heat shock-induced turnover of amino acids
+and nucleotides served to meet the extra energy requirement due to heat-induced protein metabolism and modification. The enhanced respiration led
+to oxidative stress, and subsequently induced the aldehyde detoxification system. These results indicated that new insight into the response logic
+of S. cerevisiae to heat shock can be gained by integrating expression profiles and the logical relations between heat shock response metabolic pathways.\cite{ResponseLogic}
+\subsubsection{Glycolysis}
+
+One function of this futile cycling
+of trehalose may be to increase the intracellular level of
+trehalose-6-phosphate, which is a potent inhibitor of the
+main hexokinase Hxk2p. This enzyme could be replaced by the Glk1p
+and Hxk1p hexokinases, which are induced under heat
+shock conditions (this work) and are, respectively, not and
+less inhibited by trehalose-6-phosphate. This replacement may have a role in the control of
+glycolytic flux and/or alternative pathways (trehalose cycle
+and pentose phosphate pathway).\cite{MsnContraHsf1}
+
+A connection between accumulation of intracellular
+glycerol and cell-wall-damaging treatments has been
+described previously (Garcia-Rodriguez et al., 2000).
+Furthermore, our group has postulated a ‘protective
+function’ for glycerol besides its role as osmolyte in high
+osmotic stress conditions. This may explain why glycerol
+is accumulated when cells are shifted to 37 C \cite{GlycerolAccumulate}
+
+\subsubsection{Trehalose}
+Such a mechanism can be inferred very nicely from the case of trehalose. Here, the
+producing enzymes (trehalose 6-phosphate synthase and phosphatase; Tps1p and Tps2p) have activity
+optima at temperatures of 35–45 C, whereas the degrading enzyme (trehalase; Nth1p) has its optimum
+temperature at 30 C . With this discrepancy in optimal temperatures, very little trehalose is
+produced at 30 C, and because trehalase is at its maximum activity, no trehalose accumulates.
+However, at 40 C, trehalose production is high and the trehalase activity is reduced by a factor of
+~2.4, which causes trehalose to accumulate. Once the temperature returns to normal values, the direct
+temperature dependence of these enzyme activities allows the cell immediately to degrade all trehalose
+accumulated at the higher temperature. Not to be wasteful, this degraded trehalose enters glycolysis in
+the form of two molecules of glucose.
+In a slightly different mechanism, glycogen production and degradation are regulated by cAMP
+dependent phosphorylation: in the presence of glucose, glycogen synthase is activated and glycogen
+phosphorylase is inactivated; at higher temperatures (35 C), the glucose effects on these enzymes are
+amplified.\cite{OtherModel}
+
+
+The enzymes catalysing the synthesis of trehalose
+are localized to the yeast cytosol, where production of the sugar occurs in two steps: first
+the glucose moiety from uridine-diphosphate–glucose
+is joined to glucose-6-phosphate, forming trehalose-6-phosphate;
+the phosphate group is then removed to
+yield trehalose and recycle free inorganic phosphate.
+The enzymatic complex that carries out this process
+consists of at least three distinct, copurifying components
+– Tps1p, Tps2p and Tsl1p. A fourth
+protein, Tps3p (identified by sequence homology with
+Tsl1p), has also been found to associate with Tps1p and
+Tps2p (S. Hohmann, pers. commun.). Tps1p catalyses
+the first step in trehalose synthesis; cells lacking this
+gene produce neither trehalose nor trehalose-6-phosphate.
+Phosphatase activity resides in Tps2p;
+tps2 mutants accumulate large quantities of 
+trehalose-6-phosphate under circumstances in which trehalose
+would normally be found. The functions of Tsl1p and
+Tps3p are less clear, but these proteins seem to 
+contribute to regulation: either gene can be deleted 
+without affecting the heat-induced accumulation of 
+trehalose by log-phase cells, but accumulation is severely
+impaired if both Tsl1p and Tps3p are absent \cite{YinYangTrehalose}
+
+
+Some previous workers seeking to understand the
+mechanism by which heat shock induced the 
+accumulation of trehalose argued that the induction of 
+expression of TPSZ was an essential key in this process
+(Hottiger et al., 1987; Bell et al., 1992), while others
+suggested that this rapid accumulation primarily resulted
+from the direct effect of temperature on the kinetic
+properties of Tre6P synthase complex and trehalase.
+Here, we showed that both gene induction and
+temperature modulation of kinetic properties of 
+trehalose enzymes takes part in this process, but their
+relative involvement is strongly linked to the 
+temperature range at which heat shocks are performed. Within
+temperature upshifts between 33 and 37 "C, the 
+transcriptional activation of TPSZ was needed to allow a net,
+but otherwise transient, accumulation of trehalose.
+Between 37 and 40"C, small changes in the absolute
+temperature resulted in a strong reduction of TPSZ
+expression, but in great changes of kinetic properties of
+Tre6P synthase/phosphatase complex and trehalase. \cite{Parrou97}
+
+In the yeast Saccharomyces cerevisiae, trehalose levels vary
+depending on the environment of the cell. The levels are 
+almost undetectable during normal exponential growth. After
+heat shock, trehalose levels increase rapidly and dramatically,
+along with the accumulation of heat shock proteins (HSPs).
+This rapid increase in trehalose has been attributed to
+the increase in both the translation of the genes involved in the
+synthesis of trehalose (TPS1 and TPS2) and the
+substrates required for trehalose synthesis. High trehalose levels can stabilize enzymatic
+activity and can prevent the aggregation of exogenous proteins
+in vivo during heat shock. Trehalose is degraded in the
+cytoplasm by neutral trehalase, encoded by the gene NTH1. The transcription of NTH1 is stress responsive;
+however, the activity of Nth1 is greater during recovery
+from stress, allowing Nth1 to successfully compete
+with the biosynthetic pathway and reduce intracellular trehalose
+levels. This degradation of trehalose is critical for
+recovery from heat shock as very high levels of trehalose
+can interfere with normal protein activity by stabilizing 
+proteins in nonnative conformations and inhibiting the refolding
+of these denatured proteins by HSPs. Taken
+together, these data have led to a temporal model of trehalose
+function as a cochaperone during the heat shock response:
+trehalose functions to protect proteins at the initial stages of
+the heat shock response before HSPs have been fully induced,
+but trehalose must be degraded in order for the HSPs to fully
+assist the cell in recovery from heat shock\cite{TrehaloseRegulatorHsf}
+
+Thus, the levels of trehalose serve to modify
+the dynamic range of Hsf1 activity in specific ways: trehalose is
+required for maximal Hsf1 activity at the initiation of heat
+shock, while a higher, yet limited, threshold of trehalose is
+required for sustained transcriptional activity.\cite{TrehaloseRegulatorHsf}
+
+Some enzymes of the trehalose
+metabolism were found to be induced by Msn2/4p in this
+work (i.e. Pgm2p, Ugp1p and Tps1p). It has also been
+shown that the expression of TPS2 is Msn2p dependent, as well as that of TPS3. Consistently, the trehalose
+accumulation in response to a mild heat shock is defective in
+the msn2msn4 mutant. The trehalose could contribute to thermoresistance, as this compound
+increases the thermal stability of proteins in vitro and strains unable to produce trehalose
+(tps1, tps2 and msn2msn4 null strains) are sensitive to
+heat shock. Trehalose is also important for thermotolerance when pretreatment
+is performed at temperatures higher than 40 C. Accordingly, in our experimental conditions
+(pretreatment at 37 C), thermotolerance is not impaired in
+the mutant strain. However, it should be noted that the
+accumulation of trehalose as a result of heat shock is
+limited, as the neutral trehalose Nth1p is also induced
+under these conditions, suggesting a recycling of trehalose in response to stress.\cite{MsnContraHsf1}
+
+
+\subsection{Uncategorised}
+We observed that, whereas Msn2/4p controls the expression
+of most of the carbon metabolic enzymes and antioxidant
+defence proteins of the heat shock response, Hsf1p is very
+speci®c for the induction of the chaperones and chaperone-associated heat shock proteins.\cite{MsnContraHsf1}
+
+
+\subsection{Możliwe rozszerzenia modelu}
+
+We identified 12 heat-responsive TFs, 7 (Msn2, Msn4,
+Hsf1, Yap1, Hac1, Rlm1 and Cad1) of which are known to
+be involved in heat shock response (see Table 1). Our
+findings are supported by the literature. First, Msn2 and
+Msn4 are known to regulate the general stress response in
+yeast. They regulate the expression of many genes in
+response to several stresses, including heat shock, osmotic
+shock, oxidative stress, low pH, glucose starvation, sorbic
+acid and high ethanol concentrations, by binding to the
+stress response element (STRE) located in the promoters
+of these genes [25-27]. Second, Hsf1 is the well-known
+heat shock factor that binds to the heat shock element
+(HSE) to regulate the transcription of many heat-inducible
+genes, including genes involved in protein folding,
+detoxification, energy generation, carbohydrate metabolism,
+and cell wall organization [25,27,28]. All these gene
+products are important for cell to counteract the deleterious
+effects of heat. Third, Yap1, a well-known oxidative
+shock factor, is also known to be involved in heat shock
+response [29]. For example, Yap1 induces the expression
+of GSH1 and GSH2 to synthesize glutathione in heat
+shock response [30]. Fourth, heat stress can cause
+unfolded proteins to accumulate in the endoplasmic reticulum
+(ER), triggering the unfolded protein response
+(UPR). Hac1 binds to the UPR element (UPRE) to regulate
+genes that are involved in UPR [31]. Fifth, heat stress
+causes a weakening of cell wall and membrane stretching
+which stimulates the protein kinase C (PKC) pathway
+[25]. Rlm1, a component of the PKC pathway, is then activated
+to perform the function of maintaining the cell wall
+integrity [32]. Finally, Cad1, an AP-1 like bZIP transcriptional
+activator involved in stress responses (e.g. heat
+shock response, pleiotropic drug resistance), controls a set
+of genes involved in stabilizing proteins [33]. The involvement
+of Cad1 in stress responses was also identified by
+Segal et al. [7].
+
+In addition to the above seven known heat-responsive
+TFs, five novel heat-responsive TFs (Rox1, Cst6, Ume6,
+Ste12 and Dig1) have also been identified by HIMIA.
+Rox1 contains a high-mobility group (HMG) domain that
+is responsible for DNA bending activity [29]. Cst6 and
+Ume6 regulate genes involved in the cell cycle and DNA
+processing [23]. Ste12 and Dig1 are involved in the regulation
+of mating-specific genes and the invasive growth
+pathway [29]. Identification of these five TFs as heatresponsive
+TFs suggests that heat shock response may
+have crosstalk with other cellular processes. It is known
+that the cell cycle transiently arrests during a heat shock
+stress [25], validating our proposal that heat shock
+response may have crosstalk with the cell cycle process.
+Moreover, these five novel heat-responsive TFs and the
+other seven known heat-responsive TFs form a highly connected
+network of interactions, supporting our prediction
+that these five novel heat-responsive TFs may play a role
+in heat shock response (see Figure 3). \cite{NewTFs}
 
 \section{Badanie odpowiedzi glikolizy na zmiany km}
 %\section{Bialka o niskiej temperaturze denaturacji}
